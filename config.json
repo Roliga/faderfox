@@ -1,0 +1,26 @@
+{
+	"poll_rate": 30,
+	"device_name": "Faderfox PC4 MIDI 1",
+	"mappings": {
+		"1": {
+			"type": "sink",
+			"name_filter": "applications",
+			"proplist_filters": {
+			}
+		},
+		"2": {
+			"type": "sink",
+			"name_filter": "voip"
+		},
+		"3": {
+			"type": "sink",
+			"name_filter": "virtual"
+		},
+		"6": {
+			"type": "sinkInput",
+			"proplist_filters": {
+				"application.name": "Spotify"
+			}
+		}
+	}
+}

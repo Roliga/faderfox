@@ -1,0 +1,9 @@
+[Unit]
+Description=Faderfox MIDI driver
+
+[Service]
+ExecStart=%h/bin/faderfox.py
+
+[Install]
+WantedBy=default.target
+After=pulseaudio.service
