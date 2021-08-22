@@ -8,6 +8,12 @@ from os import environ
 from os.path import exists, abspath
 from time import sleep
 
+# TODO: Handle device disconnects
+# TODO: Switch to different MIDI library?
+# TODO: Execute commands on value change
+# TODO: Pipe values to sub process?
+# TODO: Verbose output for debugging
+
 class PulseType(enum.Enum):
     Sink = 0,
     Source = 1,
