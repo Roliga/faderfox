@@ -1,9 +1,13 @@
 [Unit]
 Description=Faderfox MIDI driver
+After=pulseaudio.service
+# BindsTo= causes pulseaudio to be pulled up when this unit is started,
+# but the alternative PartOf= does not restart this service when pulseaudio
+# dies for any reason other than systemctl commands.
+BindsTo=pulseaudio.service
 
 [Service]
 ExecStart=%h/bin/faderfox.py
 
 [Install]
-WantedBy=default.target
-After=pulseaudio.service
+WantedBy=pulseaudio.service
