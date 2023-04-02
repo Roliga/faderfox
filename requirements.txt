@@ -1,2 +1,2 @@
 pulsectl
-pygame
+python-rtmidi
